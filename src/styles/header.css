@@ -1,0 +1,18 @@
+.header {
+  align-items: center;
+  display: flex;
+  height: 96px;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header a.active {
+  text-decoration: underline;
+}

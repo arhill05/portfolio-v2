@@ -1,0 +1,7 @@
+html, body, #___gatsby, #___gatsby>div, .site {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
