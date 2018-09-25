@@ -27,6 +27,7 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
           <html lang="en" />
         </Helmet>
         <TypographyStyle typography={typography} />
@@ -35,6 +36,17 @@ const Layout = ({ children }) => (
         <main>
           {children}
         </main>
+        <script dangerouslySetInnerHTML={{
+          __html: `if (window.netlifyIdentity) {
+                  window.netlifyIdentity.on("init", user => {
+                    if (!user) {
+                      window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                      });
+                    }
+                  });
+                }`
+          }}></script>
       </div>
     )}
   />

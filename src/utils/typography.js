@@ -4,7 +4,7 @@ const typography = new Typography({
   baseFontSize: '18px',
   headerFontFamily: ['Lato', 'sans-serif'],
   bodyFontFamily: ['Merriweather', 'sans-serif'],
-  bodyColor: 'black',
+  bodyColor: '#444',
   headerWeight: '700',
   bodyWeight: '400',
   boldWeight: '700',
